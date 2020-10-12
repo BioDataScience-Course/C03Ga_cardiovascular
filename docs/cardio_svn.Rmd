@@ -1,0 +1,80 @@
+---
+title: "Les maladies cardiovasculaires"
+subtitle: "Réseaux de neurones artificiels"
+author: '....'
+date: "12/10/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+SciViews::R
+library(mlearning)
+```
+
+# Objectif
+
+Ce document s'intéresse aux réseaux de neurones artificiels.
+
+Proposez le meilleur algorithme afin de prédire la variable `cardio` du jeu de données `cardio.rds`.
+
+**Ce projet est un projet cadré. Vous devez uniquement répondre à la question posée.**
+
+
+# Analyses
+
+> Importez le jeu de données `cardio.rds`. Assurez vous que chaque variable soit dans un format correcte. 
+
+```{r import}
+cardio <-
+```
+
+> Utilisez la fonction table() afin de mettre en évidence le nombre de niveau de la variable `cardio`ainsi que le nombre d'occurence par niveau de cette variable.
+
+```{r table}
+```
+
+> Réalisez 3 graphiques différents de votre choix pour explorer ce jeu de données. Chaque graphique doit être commenté en 1 à 2 lignes.
+
+```{r plot1}
+```
+
+```{r plot2}
+```
+
+```{r plot3}
+```
+
+## SVN
+
+> réalisez une analyse discriminante linéaire afin de prédire la variable `Class`. Détaillez le principe de cette analyse en maximum 3 lignes.
+
+```{r}
+cardio_svn <- 
+```
+
+> Obtenez les classes prédites par la lda via une validation croisée. Réalisez ensuite une matrice de confusion. Détaillez le résultat de votre matrice de confusion en maximum 3 lignes.
+
+```{r}
+cardio_pred <- 
+cardio_conf <- 
+```
+
+
+## Random forest
+
+> Réalisez un Random Forest afin de prédire la variable `cardio`. 
+
+```{r}
+cardio_rf <- 
+```
+
+> Obtenez les classes prédites par la RF via une validation croisée. Réalisez ensuite une matrice de confusion. Détaillez le résultat de votre matrice de confusion en maximum 3 lignes.
+
+```{r}
+cardio_rf_pred <- 
+cardio_rf_conf <- 
+```
+
+# Conclusion 
+
+> Comparez ces deux algorithmes en 4 lignes maximum. 
