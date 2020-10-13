@@ -11,5 +11,5 @@ Ce projet est un projet court et cadré. Ce dernier doit être terminé pour la 
 
 - Au sein du fichier cardio_metrique.rmd, complétez les zones manquantes. 
 - Au sein du fichier cardio_roc.rmd, complétez les zones manquantes.
-- Au sein du fichier cardio_svn.rmd, complétez les zones manquantes.
+- Au sein du fichier cardio_nnet.rmd, complétez les zones manquantes.
 

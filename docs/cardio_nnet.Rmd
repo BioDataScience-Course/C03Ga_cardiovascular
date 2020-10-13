@@ -1,6 +1,6 @@
 ---
 title: "Les maladies cardiovasculaires"
-subtitle: "Réseaux de neurones artificiels"
+subtitle: "Réseaux de neurones artificiels & machine à vecteur supports"
 author: '....'
 date: "12/10/2020"
 output: html_document
@@ -44,15 +44,31 @@ cardio <-
 ```{r plot3}
 ```
 
-## SVN
+## Réseau de neurones
 
-> réalisez une analyse discriminante linéaire afin de prédire la variable `Class`. Détaillez le principe de cette analyse en maximum 3 lignes.
+> réalisez un réseau de neurones afin de prédire la variable `cardio`. Détaillez le principe de cette analyse en maximum 3 lignes.
 
 ```{r}
-cardio_svn <- 
+cardio_nnet <- 
 ```
 
-> Obtenez les classes prédites par la lda via une validation croisée. Réalisez ensuite une matrice de confusion. Détaillez le résultat de votre matrice de confusion en maximum 3 lignes.
+> Obtenez les classes prédites par le reseaux de neurones via une validation croisée. Réalisez ensuite une matrice de confusion. Détaillez le résultat de votre matrice de confusion en maximum 3 lignes.
+
+```{r}
+cardio_pred <- 
+cardio_conf <- 
+```
+
+
+## Machine à vecteur supports
+
+> réalisez une machine à vecteur supports afin de prédire la variable `cardio`. Détaillez le principe de cette analyse en maximum 3 lignes.
+
+```{r}
+cardio_svm <- 
+```
+
+> Obtenez les classes prédites par la Machine à vecteur supports via une validation croisée. Réalisez ensuite une matrice de confusion. Détaillez le résultat de votre matrice de confusion en maximum 3 lignes.
 
 ```{r}
 cardio_pred <- 
@@ -77,4 +93,4 @@ cardio_rf_conf <-
 
 # Conclusion 
 
-> Comparez ces deux algorithmes en 4 lignes maximum. 
+> Comparez ces trois algorithmes en 6 lignes maximum. 
