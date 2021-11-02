@@ -1,8 +1,8 @@
 ---
-title: "Les maladies cardiovasculaires"
+title: "Maladies cardiovasculaires (nnet/svm)"
 subtitle: "Réseaux de neurones artificiels & machine à vecteur supports"
-author: '....'
-date: "12/10/2020"
+author: '___'
+date: "___"
 output: html_document
 ---
 
@@ -13,84 +13,87 @@ library(mlearning)
 
 # Objectif
 
-Ce document s'intéresse aux réseaux de neurones artificiels.
+Ce document s'intéresse à l'utilisation de réseaux de neurones artificiels et de machine à vecteurs supports pour réaliser des classifieurs. Proposez le meilleur algorithme afin de prédire la variable `cardio` du jeu de données `cardio.rds`.
 
-Proposez le meilleur algorithme afin de prédire la variable `cardio` du jeu de données `cardio.rds`.
-
-**Ce projet est un projet cadré. Vous devez uniquement répondre à la question posée.**
+<!--% Ce projet est un projet cadré. Vous devez uniquement répondre à la question posée. Ne modifiez pas le nom des chunks. -->
 
 
 # Analyses
 
-> Importez le jeu de données `cardio.rds`. Assurez vous que chaque variable soit dans un format correcte. 
+<!--%  Importez le jeu de données `cardio.rds`. Assurez vous que chaque variable soit dans un format correct. --> 
 
 ```{r import}
 cardio <-
 ```
 
-> Utilisez la fonction table() afin de mettre en évidence le nombre de niveau de la variable `cardio`ainsi que le nombre d'occurence par niveau de cette variable.
+<!--% Utilisez la fonction `table()` afin de mettre en évidence le nombre de niveau de la variable `cardio` ainsi que le nombre d'occurences par niveau de cette variable. -->
 
 ```{r table}
+
 ```
 
-> Réalisez 3 graphiques différents de votre choix pour explorer ce jeu de données. Chaque graphique doit être commenté en 1 à 2 lignes.
+<!--% Réalisez 3 graphiques différents de votre choix pour explorer ce jeu de données. Chaque graphique doit être commenté en 1 à 2 lignes. -->
 
 ```{r plot1}
+
 ```
 
 ```{r plot2}
+
 ```
 
 ```{r plot3}
+
 ```
 
 ## Réseau de neurones
 
-> réalisez un réseau de neurones afin de prédire la variable `cardio`. Détaillez le principe de cette analyse en maximum 3 lignes.
+<!--% Réalisez un classifieur par réseau de neurones afin de prédire la variable `cardio`. Commentez votre analyse en maximum 3 lignes. -->
 
-```{r}
+```{r nnet}
 cardio_nnet <- 
 ```
 
-> Obtenez les classes prédites par le reseaux de neurones via une validation croisée. Réalisez ensuite une matrice de confusion. Détaillez le résultat de votre matrice de confusion en maximum 3 lignes.
+<!--% Obtenez les classes prédites par le réseau de neurones via une validation croisée 10 fois. Réalisez ensuite une matrice de confusion. Analysez votre matrice de confusion en maximum 3 lignes. -->
 
-```{r}
-cardio_pred <- 
-cardio_conf <- 
+```{r nnet_pred}
+cardio_nnet_pred <- 
+cardio_nnet_conf <- 
 ```
 
 
-## Machine à vecteur supports
+## Machine à vecteurs supports
 
-> réalisez une machine à vecteur supports afin de prédire la variable `cardio`. Détaillez le principe de cette analyse en maximum 3 lignes.
+<!--% Réalisez un cliassifieur en utilisant la machine à vecteurs supports afin de prédire la variable `cardio`. Commentez votre analyse en maximum 3 lignes. -->
 
-```{r}
+```{r svm}
 cardio_svm <- 
 ```
 
-> Obtenez les classes prédites par la Machine à vecteur supports via une validation croisée. Réalisez ensuite une matrice de confusion. Détaillez le résultat de votre matrice de confusion en maximum 3 lignes.
+<!--% Obtenez les classes prédites par la machine à vecteurs supports via une validation croisée 10 fois. Réalisez ensuite une matrice de confusion. Analysez votre matrice de confusion en maximum 3 lignes. -->
 
-```{r}
-cardio_pred <- 
-cardio_conf <- 
+```{r svm_pred}
+cardio_svm_pred <- 
+cardio_svm_conf <- 
 ```
 
 
 ## Random forest
 
-> Réalisez un Random Forest afin de prédire la variable `cardio`. 
+<!--% Réalisez un classifieur par forêt aléatoire afin de prédire la variable `cardio`. -->
 
-```{r}
+```{r rf}
 cardio_rf <- 
 ```
 
-> Obtenez les classes prédites par la RF via une validation croisée. Réalisez ensuite une matrice de confusion. Détaillez le résultat de votre matrice de confusion en maximum 3 lignes.
+<!--% Obtenez les classes prédites par la RF via une validation croisée 10 fois. Réalisez ensuite une matrice de confusion. Analysez votre matrice de confusion en maximum 3 lignes. -->
 
-```{r}
+```{r rf_pref}
 cardio_rf_pred <- 
 cardio_rf_conf <- 
 ```
 
-# Conclusion 
+# Conclusions 
 
-> Comparez ces trois algorithmes en 6 lignes maximum. 
+<!--% Comparez ce que vous avez obtenus avec ces trois algorithmes en 6 lignes maximum. -->
+
